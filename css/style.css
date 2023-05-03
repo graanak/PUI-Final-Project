@@ -1,0 +1,122 @@
+/*----------------------------------- Global styles ------------------------------------------*/ 
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0px;
+}
+
+
+body {
+	font-family: Goudy Bookletter 1911;
+    background-color: #DCEED1;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+}
+
+.logo {
+    color: #BA3B46;
+    display: block;
+	height: auto;
+	max-width: 100%;
+    font-family: Saint;
+    font-size: 3rem;
+}
+
+.logo a {
+    color: #BA3B46;
+    text-decoration: none;
+}
+
+
+.logo:hover {
+    color: white;
+}
+
+
+nav ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+    font-size: 2rem;
+
+}
+
+nav a {
+	color: #596157;
+	text-decoration: none;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+}
+
+nav a:hover {
+	color: white;
+}
+
+main {
+	padding: 50px;
+}
+
+section {
+	margin-bottom: 50px;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+body a {
+    color: #BA3B46;
+}
+
+body a:hover {
+    color: white;
+}
+
+/* ------------------------------------Homepage styles --------------------------------------- */
+
+body {
+    display: flex;
+    flex-direction: column; 
+    height: 100vh; 
+  }
+
+body ul {
+    list-style: none;
+    color: #596157;
+}
+
+body p {
+    color: #596157;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap; 
+    height: calc(100vh - 4rem); 
+  }
+  
+
+/*---------------------------------- cursor animation----------------------------------- */
+#mouse-trail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+  }
+
+#mouse-trail img {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+    opacity: 1;
+    transition: opacity 0.5s;
+  }
+  
